@@ -40,6 +40,18 @@ class BowlingGameTests(unittest.TestCase):
         game.calculate_score()
         self.assertEqual(game.score, 15)
 
+    # adding a test for what is meant to be a spare
+    def test_for_spare(self):
+        game = BowlingGame()
+        game.throw_one(4)
+        game.throw_one(6)
+        game.throw_one(7)
+        game.throw_one(0)
+        for _ in range(16):
+            game.throw_one(0)
+        game.calculate_score()
+        self.assertEqual(game.score, 24)
+
 
 # calling all tests in this class to be executed
 if __name__ == '__main__':

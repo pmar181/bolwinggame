@@ -27,7 +27,18 @@ class BowlingGameTests(unittest.TestCase):
         game.calculate_score()
         self.assertEqual(game.score, 20)
 
-    #
+    # adding a test for different types of throws
+    def test_different_throws(self):
+        game = BowlingGame()
+        game.throw_one(6)
+        game.throw_one(0)
+        game.throw_one(7)
+        game.throw_one(0)
+        game.throw_one(2)
+        for _ in range(15):
+            game.throw_one(0)
+        game.calculate_score()
+        self.assertEqual(game.score, 15)
 
 
 # calling all tests in this class to be executed

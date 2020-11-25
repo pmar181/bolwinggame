@@ -4,8 +4,8 @@ class BowlingGame(object):
         self.throw = []
         self.score = 0
 
-    # define throw method
-    def throw(self, pins):
+    # define throw one time method
+    def throw_one(self, pins):
         self.throw.append(pins)
 
     # adding many throws function to the prototype

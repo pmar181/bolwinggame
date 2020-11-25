@@ -3,14 +3,13 @@ from Bowling import BowlingGame
 
 
 class BowlingGameTests(unittest.TestCase):
-    # creating a global variable for avoiding repetition of code
-    game = BowlingGame()
 
-    # creating static method for many throws
-    @staticmethod
-    def throw_many(game, number_of_times, pins):
-        for _ in range(number_of_times):
-            game.throw(pins)
+    # adding a method to test all gutters
+    def test_all_gutters(self):
+        game = BowlingGame()
+        game.throw_many(20, 0)
+        game.calculate_score()
+        self.assertEqual(game.score, 0)
 
 
 # calling all tests in this class to be executed

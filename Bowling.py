@@ -7,6 +7,12 @@ class BowlingGame(object):
     def throw(self, pins):
         self.throw.append(pins)
 
+    # adding many throws function to the prototype
+    def throw_many(self, number_of_times, pins):
+        for _ in range(number_of_times):
+            self.throw.append(pins)
+
+    # calculates the score
     def calculate_score(self):
         ball = 0
         for frames in range(10):

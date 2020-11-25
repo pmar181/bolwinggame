@@ -18,7 +18,16 @@ class BowlingGameTests(unittest.TestCase):
         game.calculate_score()
         self.assertEqual(game.score, 300)
 
+    # adding a throw all with 1 pin hit always
+    def test_all_ones(self):
+        game = BowlingGame()
+        number_of_times = 20
+        pins = 1
+        game.throw_many(number_of_times, pins)
+        game.calculate_score()
+        self.assertEqual(game.score, 20)
 
+    #
 
 
 # calling all tests in this class to be executed

@@ -4,6 +4,7 @@ class BowlingGame(object):
         self.throw = []
         self.score = 0
 
+    # define throw method
     def throw(self, pins):
         self.throw.append(pins)
 

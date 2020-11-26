@@ -1,3 +1,7 @@
+# @author: Dan Hayworth
+# @date: 26/November/2020
+# @project: Bowling Game
+
 import unittest
 from Bowling import BowlingGame
 
@@ -82,22 +86,38 @@ class BowlingGameTests(unittest.TestCase):
         game.calculate_score()
         self.assertEqual(game.score, 24)
 
-    # adding test method to test the strike
-    def test_for_strike(self):
+    # adding test method to test with one strike
+    def test_for_one_strike(self):
         """
         @param self:
-        @:parameter 3 times throw including strike
+        @:parameter 3 times throw including  one strike
         @:parameter different number of pins hit
         @:returns 22 score
         """
         game = BowlingGame()
         game.throw_one(10)
+        game.throw_one(3)
+        game.throw_one(6)
+        game.throw_many(19, 0)
+        game.calculate_score()
+        self.assertEqual(game.score, 28)
+
+    # adding test method to test 2 strikes
+    def test_for_two_strike(self):
+        """
+        @param self:
+        @:parameter 4 times throw including  two strikes
+        @:parameter different number of pins hit
+        @:returns 46 score
+        """
+        game = BowlingGame()
+        game.throw_one(10)
+        game.throw_one(10)
         game.throw_one(4)
         game.throw_one(2)
-        game.throw_many(17, 0)
+        game.throw_many(26, 0)
         game.calculate_score()
-        self.assertEqual(game.score, 22)
-
+        self.assertEqual(game.score, 46)
 
 # calling all tests in this class to be executed
 if __name__ == '__main__':

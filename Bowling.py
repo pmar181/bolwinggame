@@ -1,3 +1,6 @@
+# @author: Dan Hayworth
+# @date: 26/November/2020
+# @project: Bowling Game
 
 class BowlingGame(object):
     def __init__(self):
@@ -13,7 +16,7 @@ class BowlingGame(object):
         for _ in range(number_of_times):
             self.throw.append(pins)
 
-    # calculates the score
+    # method that calculates the score
     def calculate_score(self):
         ball = 0
         for frames in range(10):

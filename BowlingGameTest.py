@@ -4,21 +4,21 @@ from Bowling import BowlingGame
 
 class BowlingGameTests(unittest.TestCase):
 
-    # adding a method to test all gutters
+    # adding a test method to test all gutters
     def test_all_gutters(self):
         game = BowlingGame()
         game.throw_many(20, 0)
         game.calculate_score()
         self.assertEqual(game.score, 0)
 
-    # adding a perfect method
+    # adding a test method to test a perfect game
     def test_perfect_game(self):
         game = BowlingGame()
         game.throw_many(12, 10)
         game.calculate_score()
         self.assertEqual(game.score, 300)
 
-    # adding a throw all with 1 pin hit always
+    # adding a test method for throw all with 1 pin hit always
     def test_all_ones(self):
         game = BowlingGame()
         number_of_times = 20
@@ -27,7 +27,7 @@ class BowlingGameTests(unittest.TestCase):
         game.calculate_score()
         self.assertEqual(game.score, 20)
 
-    # adding a test for different types of throws
+    # adding a test method for different types of throws
     def test_different_throws(self):
         game = BowlingGame()
         game.throw_one(6)
@@ -40,7 +40,7 @@ class BowlingGameTests(unittest.TestCase):
         game.calculate_score()
         self.assertEqual(game.score, 15)
 
-    # adding a test for what is meant to be a spare
+    # adding a test method for what is meant to be a spare
     def test_for_spare(self):
         game = BowlingGame()
         game.throw_one(4)
@@ -51,6 +51,16 @@ class BowlingGameTests(unittest.TestCase):
             game.throw_one(0)
         game.calculate_score()
         self.assertEqual(game.score, 24)
+
+    # adding test method to test the strike
+    def test_for_strike(self):
+        game = BowlingGame()
+        game.throw_one(10)
+        game.throw_one(4)
+        game.throw_one(2)
+        game.throw_many(17, 0)
+        game.calculate_score()
+        self.assertEqual(game.score, 22)
 
 
 # calling all tests in this class to be executed

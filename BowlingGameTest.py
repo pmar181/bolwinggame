@@ -7,6 +7,7 @@ class BowlingGameTests(unittest.TestCase):
     # adding a test method to test all gutters
     def test_all_gutters(self):
         """
+        @param self:
         @:parameter 20 times throw
         @:parameter 0 pins hit
         @:returns 0 score
@@ -19,6 +20,7 @@ class BowlingGameTests(unittest.TestCase):
     # adding a test method to test a perfect game
     def test_perfect_game(self):
         """
+        @param self:
         @:parameter 12 times throw
         @:parameter 10 pins hit
         @:returns 300 score
@@ -31,6 +33,7 @@ class BowlingGameTests(unittest.TestCase):
     # adding a test method for throw all with 1 pin hit always
     def test_all_ones(self):
         """
+        @param self:
         @:parameter 20 times throw
         @:parameter 1 pins hit
         @:returns 20 score
@@ -45,6 +48,7 @@ class BowlingGameTests(unittest.TestCase):
     # adding a test method for different types of throws
     def test_different_throws(self):
         """
+        @param self:
         @:parameter 5 times single throw
         @:parameter different numbers of pins hit
         @:returns 15 score
@@ -63,6 +67,7 @@ class BowlingGameTests(unittest.TestCase):
     # adding a test method for what is meant to be a spare
     def test_for_spare(self):
         """
+        @param self:
         @:parameter 4 times single throw spare
         @:parameter different number of pins hit
         @:returns 24 score
@@ -80,6 +85,7 @@ class BowlingGameTests(unittest.TestCase):
     # adding test method to test the strike
     def test_for_strike(self):
         """
+        @param self:
         @:parameter 3 times throw including strike
         @:parameter different number of pins hit
         @:returns 22 score

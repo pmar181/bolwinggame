@@ -33,7 +33,7 @@ class BowlingGameTests(unittest.TestCase):
         game.calculate_score()
         self.assertEqual(game.score, 300)
 
-    # adding a test method for throw all with 1 pin hit always
+    # to add a test method for throw all with 1 pin hit always
     def test_all_ones(self):
         """
         @param self:

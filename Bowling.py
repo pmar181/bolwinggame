@@ -6,7 +6,7 @@ class BowlingGame(object):
         self.throw = []
         self.score = 0
 
-    # define throw one time method
+    # to define throw one time method
     def throw_one(self, pins):
         self.throw.append(pins)
 

@@ -1,5 +1,4 @@
-# @author: Dan Hayworth
-# @date: 26/November/2020
+
 # @project: Bowling Game
 
 import unittest
@@ -97,16 +96,16 @@ class BowlingGameTests(unittest.TestCase):
         game = BowlingGame()
         game.throw_one(10)
         game.throw_one(3)
-        game.throw_one(6)
+        game.throw_one(5)
         game.throw_many(19, 0)
         game.calculate_score()
-        self.assertEqual(game.score, 28)
+        self.assertEqual(game.score, 26)
 
     # adding test method to test 2 strikes
-    def test_for_two_strike(self):
+    def test_for_two_strikes(self):
         """
         @param self:
-        @:parameter 4 times throw including  two strikes
+        @:parameter 4 times throw including  two strikes consecutively
         @:parameter different number of pins hit
         @:returns 46 score
         """
@@ -118,6 +117,7 @@ class BowlingGameTests(unittest.TestCase):
         game.throw_many(26, 0)
         game.calculate_score()
         self.assertEqual(game.score, 46)
+
 
 # calling all tests in this class to be executed
 if __name__ == '__main__':

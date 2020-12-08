@@ -1,5 +1,4 @@
-# @author: Dan Hayworth
-# @date: 26/November/2020
+
 # @project: Bowling Game
 
 class BowlingGame(object):

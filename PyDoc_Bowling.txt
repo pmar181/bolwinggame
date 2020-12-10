@@ -1,13 +1,12 @@
-
-(env) C:\Users\danha\PycharmProjects\bowling>python.exe -m pydoc Bowling 
+(env) Users/paulinha/Desktop/IT6039_Project/bowling/bowling>python.exe -m pydoc Bowling
 Help on module Bowling:
 
 NAME
     Bowling
 
 DESCRIPTION
-    # @author: Dan Hayworth
-    # @date: 26/November/2020
+    # @author: Paula Da Silva
+    # @date: 08/December/2020
     # @project: Bowling Game
 
 CLASSES
@@ -39,6 +38,7 @@ CLASSES
      |      list of weak references to the object (if defined)
 
 FILE
-    c:\users\danha\pycharmprojects\bowling\bowling.py
+    /Users/paulinha/Desktop/IT6039_Project/bowling/Bowling.py
+
 
 

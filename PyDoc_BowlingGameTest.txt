@@ -1,13 +1,13 @@
 
-(env) C:\Users\danha\PycharmProjects\bowling>python.exe -m pydoc BowlingGameTest 
+(env) Users/paulinha/Desktop/IT6039_Project/bowling/bowling>python.exe -m pydoc BowlingGameTest
 Help on module BowlingGameTest:
 
 NAME
     BowlingGameTest
 
 DESCRIPTION
-    # @author: Dan Hayworth
-    # @date: 26/November/2020
+    # @author: Paula Da Silva
+    # @date: 08/December/2020
     # @project: Bowling Game
 
 CLASSES
@@ -494,6 +494,8 @@ CLASSES
      |  maxDiff = 640
 
 FILE
-    c:\users\danha\pycharmprojects\bowling\bowlinggametest.py
+     /Users/paulinha/Desktop/IT6039_Project/bowling/BowlingGameTest.py
+
+
 
 
